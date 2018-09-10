@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context="baqui88.game.MainGameActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/peach"
+        android:minHeight="?actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp">
+
+            <ImageView
+                android:id="@+id/flameImage"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/flame" />
+            <TextView
+                android:id="@+id/mission_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/flameImage"/>
+
+            <TextView
+                android:id="@+id/trivialTargetText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Target : "
+                android:textSize="25sp"
+                android:paddingLeft="30sp"
+                android:layout_toRightOf="@+id/mission_tv" />
+
+            <TextView
+                android:id="@+id/target_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="5"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="@color/raspberry"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/trivialTargetText"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/timer"
+                android:layout_toLeftOf="@id/time_tv"/>
+
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:text="00:00"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/green"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <baqui88.widget.TouchImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/topImage"
+            android:src="@drawable/cook_island"
+            android:scaleType="fitXY"
+            />
+        <ImageView
+            android:id="@+id/top_x"
+            android:layout_width="@dimen/wrong_tick_size"
+            android:layout_height="@dimen/wrong_tick_size"
+            android:src="@drawable/x"
+            android:clickable="false"
+            />
+
+        <ImageView
+            android:id="@+id/target_hint_im"
+            android:layout_width="@dimen/target_hint_size"
+            android:layout_height="@dimen/target_hint_size"
+            android:src="@drawable/target"
+            android:clickable="false"
+            />
+    </FrameLayout>
+
+
+    <View
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <baqui88.widget.TouchImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bottomImage"
+            android:src="@drawable/cook_island"
+            android:scaleType="fitXY"
+            />
+        <ImageView
+            android:id="@+id/bot_x"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/x"
+            android:clickable="false"
+            />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></View>
+
+
+    <baqui88.widget.FButton
+        android:id="@+id/hint_bt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        fbutton:buttonColor="@color/silver"
+        android:text="@string/hint"
+        android:textStyle="bold"
+        android:textSize="22sp"
+         />
+</LinearLayout>

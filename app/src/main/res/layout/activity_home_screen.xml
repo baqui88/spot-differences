@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/wood"
+    tools:context="baqui88.game.HomeScreen">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/spot" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></View>
+
+    <baqui88.widget.FButton
+        android:id="@+id/playGame_bt"
+        fbutton:buttonColor="@color/lightGreen"
+        android:layout_width="300dp"
+        android:text="@string/play_game"
+        android:textSize="22sp"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></View>
+
+
+    <baqui88.widget.FButton
+        android:id="@+id/quit_bt"
+        fbutton:buttonColor="@color/lightGreen"
+        android:layout_width="300dp"
+        android:text="@string/quit"
+        android:textSize="22sp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

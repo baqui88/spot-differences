@@ -1,0 +1,15 @@
+[
+	{ "path": "fall.png",  "difficulty" : 1, "time" : 180, "target" : 14 },
+	{ "path": "museum.png",  "difficulty" : 1, "time" : 180, "target" : 13 },
+	{ "path": "statue.png",  "difficulty" : 1, "time" : 180, "target" : 13 },
+	{ "path": "morocco.png",  "difficulty" : 1, "time" : 180, "target" : 14 },
+
+	{ "path": "cook_island.png",  "difficulty" : 2, "time" : 240, "target" : 16 },
+	{ "path": "castle.png",  "difficulty" : 2, "time" : 240, "target" : 17 },
+	{ "path": "taj_mahal.png",  "difficulty" : 2, "time" : 260, "target" : 17 },
+	{ "path": "ayers.png",  "difficulty" : 2, "time" : 260, "target" : 17 },
+	{ "path": "speakysea.png",  "difficulty" : 2, "time" : 280, "target" : 18 },
+	
+	{ "path": "london.png",  "difficulty" : 3, "time" : 420, "target" : 26 },
+	{ "path": "petra.png",  "difficulty" : 3, "time" : 420, "target" : 26 }
+]

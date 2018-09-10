@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Spot the differences</string>
+    <string name="play_again">Play New Game</string>
+    <string name="time">15</string>
+    <string name="done">Well Done!</string>
+    <string name="timeup">Time Up</string>
+    <string name="play_game">Play Game</string>
+    <string name="quit">Quit</string>
+    <string name="hint">HINT</string>
+    <string name="next">Next</string>
+    <string name="cancel">✖</string>
+</resources>
